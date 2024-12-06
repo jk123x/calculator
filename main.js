@@ -24,6 +24,11 @@ const operators = {
 const a = a;
 const b = b;
 
+document.getElementById("9").addEventListener("click", numberDisplay());
+
+function numberDisplay(){
+//add number to display here and then figure out how to do eventlistener for all the buttons efficiently
+};
 // function operate {
     
 // };
