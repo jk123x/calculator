@@ -21,14 +21,22 @@ const operators = {
     '%': function(a, b) { return a / b},
 };
 
-const a = a;
-const b = b;
+// let a = a;
+// let b = b;
 
-document.getElementById("9").addEventListener("click", numberDisplay());
+const numberButtons = document.querySelectorAll(".numberButton");
+const display = document.querySelector(".display");
 
-function numberDisplay(){
-//add number to display here and then figure out how to do eventlistener for all the buttons efficiently
-};
+numberButtons.forEach(function(numberButton) {
+    numberButton.addEventListener("click", function() {
+        display.textContent += numberButton.value;
+        currentValue = parseInt(display.innerText);
+    })
+})
+    
+
+
+
 // function operate {
     
 // };
