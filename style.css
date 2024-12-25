@@ -25,19 +25,36 @@
     margin-left: 650px;
 }
 
-.display {
+.toprow {
     display: flex;
-    width: 200px;
-    height: 90px;
+    justify-content: flex-start;
+    border: 2px solid khaki;
+    width: 400px;
+}
+
+.previousNumber {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     color: yellow;
-    border: 0px;
-    margin-left: 190px;
+    font-size: 20px;
+    flex-wrap: nowrap;
+}
+
+
+.currentNumber {
+    display: flex;
+    width: 150px;
+    height: 60px;
+    color: yellow;
+    margin-left: 130px;
     font-size: 50px;
     text-align: center;
     justify-content: end;
     align-items: end;
-    padding-right: 20px;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    flex-wrap: nowrap;
 }
 
 .pressable {
@@ -56,4 +73,8 @@ button {
     font-size: 32px;
     border-color:khaki;
     border: 1px light;
+}
+
+#clear {
+border: 2px solid khaki;
 }
